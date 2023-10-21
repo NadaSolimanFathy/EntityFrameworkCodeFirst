@@ -41,6 +41,7 @@ namespace EntityFrameworkCodeFirst.DBContext
                 .HasKey("StudentId", "CourseId");
 
 
+
             base.OnModelCreating(modelBuilder);
         }
 

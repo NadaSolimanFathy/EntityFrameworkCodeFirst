@@ -15,5 +15,9 @@ namespace EntityFrameworkCodeFirst.Entities
         public int Age { get; set; }
         public int DepartmentId { get; set; }
         public Department Department { get; set; }
+
+        //we add this navigational property so that if i need to 
+        //configure this relation ship with fluent API we [Has Many ]
+        public List<StudCrs> StudentCourses { get; set; }
     }
 }

@@ -15,5 +15,8 @@ namespace EntityFrameworkCodeFirst.Entities
         public int TopicId { get; set; }
 
         public Topic Topic { get; set; }
+
+        public List<StudCrs> StudentCourses { get; set; }
+
     }
 }

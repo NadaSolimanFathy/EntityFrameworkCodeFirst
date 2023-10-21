@@ -4,6 +4,7 @@ using EntityFrameworkCodeFirst.DBContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFrameworkCodeFirst.Migrations
 {
     [DbContext(typeof(DbContextNada))]
-    partial class DbContextNadaModelSnapshot : ModelSnapshot
+    [Migration("20231021053600_CheckIfAddedNavigationalPropertyAffectOrNot")]
+    partial class CheckIfAddedNavigationalPropertyAffectOrNot
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
